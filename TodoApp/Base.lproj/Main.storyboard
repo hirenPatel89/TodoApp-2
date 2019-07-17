@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wUX-CZ-Z4g">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" title="Home" id="BYZ-38-t0r" customClass="HomeView" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyH-BP-sEd">
+                                <rect key="frame" x="10" y="127" width="300" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN7-P2-0Er">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                        <color key="backgroundColor" red="0.22745098039215686" green="0.16862745098039217" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="OI1-Dc-9Gb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="26"/>
+                                        <state key="normal" title="Create Task">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnCreateTaskClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bo9-5v-QlN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aV-mY-C27">
+                                        <rect key="frame" x="0.0" y="110" width="300" height="70"/>
+                                        <color key="backgroundColor" red="0.22745098039215686" green="0.16862745098039217" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="7TM-UA-Ue7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="27"/>
+                                        <state key="normal" title="View Task">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnViewTaskClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEb-RT-u79"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1sO-it-ORT"/>
+                                    <constraint firstItem="9aV-mY-C27" firstAttribute="top" secondItem="XN7-P2-0Er" secondAttribute="bottom" constant="40" id="2HM-JX-vBy"/>
+                                    <constraint firstItem="9aV-mY-C27" firstAttribute="leading" secondItem="OyH-BP-sEd" secondAttribute="leading" id="FB9-d1-4S4"/>
+                                    <constraint firstAttribute="height" constant="250" id="OTw-bt-30F"/>
+                                    <constraint firstItem="XN7-P2-0Er" firstAttribute="top" secondItem="OyH-BP-sEd" secondAttribute="top" id="X8U-VW-Ytm"/>
+                                    <constraint firstAttribute="trailing" secondItem="9aV-mY-C27" secondAttribute="trailing" id="dBA-OF-PpB"/>
+                                    <constraint firstAttribute="trailing" secondItem="XN7-P2-0Er" secondAttribute="trailing" id="gaa-fx-5YR"/>
+                                    <constraint firstItem="XN7-P2-0Er" firstAttribute="leading" secondItem="OyH-BP-sEd" secondAttribute="leading" id="x94-WS-xcl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJc-gm-Juc">
+                                <rect key="frame" x="190" y="374" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.16862745100000001" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="acL-h2-BWG"/>
+                                    <constraint firstAttribute="height" constant="100" id="ePn-6k-pEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="tintColor" red="0.2274509804" green="0.16862745100000001" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPlusClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2o9-Mf-dAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qJc-gm-Juc" secondAttribute="bottom" constant="30" id="5eT-Mq-16m"/>
+                            <constraint firstItem="OyH-BP-sEd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NLN-w8-PHh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qJc-gm-Juc" secondAttribute="trailing" constant="30" id="X8W-TP-T8D"/>
+                            <constraint firstItem="OyH-BP-sEd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kGa-Dy-Eiq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="ws1-lh-ark"/>
+                    <connections>
+                        <outlet property="btnAddTask" destination="qJc-gm-Juc" id="htF-fb-pnM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Add Task Details-->
+        <scene sceneID="id2-kV-JDM">
+            <objects>
+                <viewController storyboardIdentifier="AddTaskDetails" id="EBq-ek-UGX" customClass="AddTaskDetails" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gzw-BO-VJn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPW-6O-xT4">
+                                <rect key="frame" x="10" y="30" width="300" height="29.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Task Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xn-Vo-dS2">
+                                <rect key="frame" x="10" y="69.5" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Abe-iV-9zF"/>
+                                    <constraint firstAttribute="height" constant="40" id="mik-cV-8mJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Task Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-V6-fTR">
+                                <rect key="frame" x="10" y="179" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bl3-dd-BeH"/>
+                                    <constraint firstAttribute="width" constant="300" id="HfV-VY-vXC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khr-PN-Cuq">
+                                <rect key="frame" x="10" y="139.5" width="300" height="29.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Task Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gW1-rX-tSd">
+                                <rect key="frame" x="10" y="288.5" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="EJb-v9-5pX"/>
+                                    <constraint firstAttribute="height" constant="40" id="XSa-O5-OdN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="chooseTaskDate:" destination="EBq-ek-UGX" eventType="editingDidBegin" id="EHS-t4-34y"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcf-2c-Ib1">
+                                <rect key="frame" x="10" y="249" width="300" height="29.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Task Time" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTs-zz-jcg">
+                                <rect key="frame" x="10" y="398" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bwl-Fw-WhQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="gDb-J6-3K3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="chooseTaskTime:" destination="EBq-ek-UGX" eventType="editingDidBegin" id="o3m-vq-hDX"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1b-Ze-n7A">
+                                <rect key="frame" x="10" y="358.5" width="300" height="29.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S06-yU-31w">
+                                <rect key="frame" x="10" y="488" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.16862745100000001" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NWr-0P-PAZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="hyW-pK-8Wv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="27"/>
+                                <state key="normal" title="Add Task">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAddTaskClicked:" destination="EBq-ek-UGX" eventType="touchUpInside" id="JZJ-ao-AL1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8xn-Vo-dS2" firstAttribute="top" secondItem="ZPW-6O-xT4" secondAttribute="bottom" constant="10" id="4wA-38-Wzr"/>
+                            <constraint firstItem="Dji-V6-fTR" firstAttribute="top" secondItem="khr-PN-Cuq" secondAttribute="bottom" constant="10" id="AkP-bZ-wCP"/>
+                            <constraint firstItem="Dji-V6-fTR" firstAttribute="centerX" secondItem="gzw-BO-VJn" secondAttribute="centerX" id="BcU-1T-d8k"/>
+                            <constraint firstItem="ZnF-AH-Y8j" firstAttribute="trailing" secondItem="ZPW-6O-xT4" secondAttribute="trailing" constant="10" id="GZb-uO-2DQ"/>
+                            <constraint firstItem="ZnF-AH-Y8j" firstAttribute="trailing" secondItem="Zcf-2c-Ib1" secondAttribute="trailing" constant="10" id="Hie-rw-N35"/>
+                            <constraint firstItem="ZnF-AH-Y8j" firstAttribute="trailing" secondItem="khr-PN-Cuq" secondAttribute="trailing" constant="10" id="Ork-A1-AZZ"/>
+                            <constraint firstItem="gW1-rX-tSd" firstAttribute="centerX" secondItem="gzw-BO-VJn" secondAttribute="centerX" id="QLr-un-vYd"/>
+                            <constraint firstItem="gW1-rX-tSd" firstAttribute="top" secondItem="Zcf-2c-Ib1" secondAttribute="bottom" constant="10" id="QeX-nK-zYP"/>
+                            <constraint firstItem="khr-PN-Cuq" firstAttribute="top" secondItem="8xn-Vo-dS2" secondAttribute="bottom" constant="30" id="Rhk-oC-ric"/>
+                            <constraint firstItem="S06-yU-31w" firstAttribute="centerX" secondItem="gzw-BO-VJn" secondAttribute="centerX" id="TBk-29-PlX"/>
+                            <constraint firstItem="aTs-zz-jcg" firstAttribute="centerX" secondItem="gzw-BO-VJn" secondAttribute="centerX" id="WIU-gr-zFF"/>
+                            <constraint firstItem="Zcf-2c-Ib1" firstAttribute="leading" secondItem="ZnF-AH-Y8j" secondAttribute="leading" constant="10" id="aAH-3r-o5S"/>
+                            <constraint firstItem="ZPW-6O-xT4" firstAttribute="leading" secondItem="ZnF-AH-Y8j" secondAttribute="leading" constant="10" id="dAh-wZ-WaA"/>
+                            <constraint firstItem="khr-PN-Cuq" firstAttribute="leading" secondItem="ZnF-AH-Y8j" secondAttribute="leading" constant="10" id="eQm-OH-3O7"/>
+                            <constraint firstItem="ZnF-AH-Y8j" firstAttribute="trailing" secondItem="b1b-Ze-n7A" secondAttribute="trailing" constant="10" id="h8S-zO-6uV"/>
+                            <constraint firstItem="b1b-Ze-n7A" firstAttribute="leading" secondItem="ZnF-AH-Y8j" secondAttribute="leading" constant="10" id="lf9-rt-GcH"/>
+                            <constraint firstItem="Zcf-2c-Ib1" firstAttribute="top" secondItem="Dji-V6-fTR" secondAttribute="bottom" constant="30" id="luh-ia-Tvi"/>
+                            <constraint firstItem="8xn-Vo-dS2" firstAttribute="centerX" secondItem="gzw-BO-VJn" secondAttribute="centerX" id="qFQ-cN-tsk"/>
+                            <constraint firstItem="ZPW-6O-xT4" firstAttribute="top" secondItem="ZnF-AH-Y8j" secondAttribute="top" constant="10" id="rb4-qg-Z3B"/>
+                            <constraint firstItem="aTs-zz-jcg" firstAttribute="top" secondItem="b1b-Ze-n7A" secondAttribute="bottom" constant="10" id="s5t-xC-Dmm"/>
+                            <constraint firstItem="b1b-Ze-n7A" firstAttribute="top" secondItem="gW1-rX-tSd" secondAttribute="bottom" constant="30" id="uPa-aa-aVq"/>
+                            <constraint firstItem="S06-yU-31w" firstAttribute="top" secondItem="aTs-zz-jcg" secondAttribute="bottom" constant="50" id="wRZ-zc-qja"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZnF-AH-Y8j"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddTask" destination="S06-yU-31w" id="m6k-KA-j35"/>
+                        <outlet property="txtTaskDate" destination="gW1-rX-tSd" id="eJ8-eO-A0S"/>
+                        <outlet property="txtTaskDescription" destination="Dji-V6-fTR" id="gak-bp-Ca7"/>
+                        <outlet property="txtTaskTime" destination="aTs-zz-jcg" id="4A6-Nr-uxY"/>
+                        <outlet property="txtTaskTitle" destination="8xn-Vo-dS2" id="pfE-Ta-xl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wS7-xI-s4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="134.48275862068968"/>
+        </scene>
+        <!--List Task View Controller-->
+        <scene sceneID="d2e-4d-DX6">
+            <objects>
+                <viewController storyboardIdentifier="ListTaskViewController" id="aBY-GH-ElN" customClass="ListTaskViewController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wGM-DM-XTf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LGz-Ff-y2t">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="0dV-Ua-zb4">
+                                    <rect key="frame" x="0.0" y="329" width="320" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TblCellListTask" rowHeight="301" id="eN7-K2-UC8" customClass="TblCellListTask" customModule="TodoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="301"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eN7-K2-UC8" id="zVK-w6-qBM">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="300.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tax-AU-YqL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="300.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaskName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-KN-p6h">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="6ZB-qR-d68"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA8-BB-dDu">
+                                                            <rect key="frame" x="10" y="40" width="300" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTq-K5-kpG">
+                                                            <rect key="frame" x="10" y="76.5" width="300" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="bTY-KE-PI2"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17l-rr-jpg">
+                                                            <rect key="frame" x="10" y="116.5" width="300" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpB-Rr-Rig">
+                                                            <rect key="frame" x="0.0" y="153" width="320" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="eUf-tP-kSC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-jun-2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNl-3Z-PDw">
+                                                            <rect key="frame" x="10" y="193" width="300" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Task Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooK-g6-Izo">
+                                                            <rect key="frame" x="0.0" y="229.5" width="320" height="24"/>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T9-g2-KS4">
+                                                            <rect key="frame" x="10" y="263.5" width="300" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="17l-rr-jpg" firstAttribute="top" secondItem="XTq-K5-kpG" secondAttribute="bottom" constant="10" id="3xx-01-bIt"/>
+                                                        <constraint firstItem="UpB-Rr-Rig" firstAttribute="top" secondItem="17l-rr-jpg" secondAttribute="bottom" constant="10" id="4ub-wx-kl6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yNl-3Z-PDw" secondAttribute="trailing" constant="10" id="7Pn-LB-N8a"/>
+                                                        <constraint firstItem="NA8-BB-dDu" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" constant="10" id="DIF-EI-1cc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="UpB-Rr-Rig" secondAttribute="trailing" id="DLv-Rg-WGy"/>
+                                                        <constraint firstItem="8T9-g2-KS4" firstAttribute="top" secondItem="ooK-g6-Izo" secondAttribute="bottom" constant="10" id="F6Z-du-ojN"/>
+                                                        <constraint firstAttribute="trailing" secondItem="XTq-K5-kpG" secondAttribute="trailing" constant="10" id="Iz7-uo-tOH"/>
+                                                        <constraint firstItem="Kdd-KN-p6h" firstAttribute="top" secondItem="Tax-AU-YqL" secondAttribute="top" id="Y4b-LT-izC"/>
+                                                        <constraint firstItem="yNl-3Z-PDw" firstAttribute="top" secondItem="UpB-Rr-Rig" secondAttribute="bottom" constant="10" id="YOY-61-q4T"/>
+                                                        <constraint firstItem="UpB-Rr-Rig" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" id="eOu-4P-su6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8T9-g2-KS4" secondAttribute="trailing" constant="10" id="gNp-gJ-sdj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Kdd-KN-p6h" secondAttribute="trailing" id="geD-Kj-jUG"/>
+                                                        <constraint firstItem="yNl-3Z-PDw" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" constant="10" id="gza-f4-Jet"/>
+                                                        <constraint firstItem="17l-rr-jpg" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" constant="10" id="hL4-AO-V3F"/>
+                                                        <constraint firstAttribute="trailing" secondItem="17l-rr-jpg" secondAttribute="trailing" constant="10" id="oOD-4Z-kaL"/>
+                                                        <constraint firstItem="XTq-K5-kpG" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" constant="10" id="orM-Pr-fMC"/>
+                                                        <constraint firstItem="8T9-g2-KS4" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" constant="10" id="r80-iS-yRZ"/>
+                                                        <constraint firstItem="XTq-K5-kpG" firstAttribute="top" secondItem="NA8-BB-dDu" secondAttribute="bottom" constant="10" id="ryB-aV-gUy"/>
+                                                        <constraint firstItem="NA8-BB-dDu" firstAttribute="top" secondItem="Kdd-KN-p6h" secondAttribute="bottom" constant="10" id="sIJ-Qe-wxI"/>
+                                                        <constraint firstItem="ooK-g6-Izo" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" id="svs-SA-sAF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ooK-g6-Izo" secondAttribute="trailing" id="um5-yA-4fw"/>
+                                                        <constraint firstItem="Kdd-KN-p6h" firstAttribute="leading" secondItem="Tax-AU-YqL" secondAttribute="leading" id="w7D-SL-py8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NA8-BB-dDu" secondAttribute="trailing" constant="10" id="yrs-Zj-enK"/>
+                                                        <constraint firstItem="ooK-g6-Izo" firstAttribute="top" secondItem="yNl-3Z-PDw" secondAttribute="bottom" constant="10" id="zLu-zv-raZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Tax-AU-YqL" secondAttribute="bottom" id="3Kc-Dj-eE7"/>
+                                                <constraint firstItem="Tax-AU-YqL" firstAttribute="leading" secondItem="zVK-w6-qBM" secondAttribute="leading" id="8zx-MZ-EeG"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tax-AU-YqL" secondAttribute="trailing" id="P5q-rp-6Ym"/>
+                                                <constraint firstItem="Tax-AU-YqL" firstAttribute="top" secondItem="zVK-w6-qBM" secondAttribute="top" id="eBq-cx-ozh"/>
+                                                <constraint firstAttribute="bottom" secondItem="8T9-g2-KS4" secondAttribute="bottom" constant="10.5" id="fuY-mP-fFX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblTaskDate" destination="yNl-3Z-PDw" id="66N-bh-26X"/>
+                                            <outlet property="lblTaskDetails" destination="17l-rr-jpg" id="irQ-Kn-k6D"/>
+                                            <outlet property="lblTaskTime" destination="8T9-g2-KS4" id="HUw-0D-sCw"/>
+                                            <outlet property="lblTaskTitle" destination="NA8-BB-dDu" id="Pap-VP-gGz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aBY-GH-ElN" id="AEQ-Yg-KwP"/>
+                                    <outlet property="delegate" destination="aBY-GH-ElN" id="kRe-gP-73m"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Left For Edit delete Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wm-ll-Gr1">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6g0-LD-YsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="0.27892960500000002" green="0.54055958989999997" blue="0.2642235416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Wm-ll-Gr1" firstAttribute="leading" secondItem="s9m-r7-kKb" secondAttribute="leading" id="1NT-Oi-Kzf"/>
+                            <constraint firstItem="9Wm-ll-Gr1" firstAttribute="top" secondItem="s9m-r7-kKb" secondAttribute="top" id="1SJ-tZ-CQ8"/>
+                            <constraint firstItem="LGz-Ff-y2t" firstAttribute="top" secondItem="s9m-r7-kKb" secondAttribute="top" constant="50" id="2u6-YG-r7D"/>
+                            <constraint firstItem="LGz-Ff-y2t" firstAttribute="bottom" secondItem="s9m-r7-kKb" secondAttribute="bottom" id="41Z-wy-dcb"/>
+                            <constraint firstItem="LGz-Ff-y2t" firstAttribute="leading" secondItem="s9m-r7-kKb" secondAttribute="leading" id="R69-iV-CNt"/>
+                            <constraint firstItem="s9m-r7-kKb" firstAttribute="trailing" secondItem="9Wm-ll-Gr1" secondAttribute="trailing" id="qaf-fu-nHi"/>
+                            <constraint firstItem="LGz-Ff-y2t" firstAttribute="trailing" secondItem="s9m-r7-kKb" secondAttribute="trailing" id="zgq-AI-m5v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s9m-r7-kKb"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblListTask" destination="LGz-Ff-y2t" id="K0b-FB-yIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubk-cJ-g47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595.625" y="849.29577464788736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kaq-uC-AqM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wUX-CZ-Z4g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3SG-YM-BM2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oUP-ME-tLn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNm-yC-tkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="134"/>
+        </scene>
+    </scenes>
+</document>
