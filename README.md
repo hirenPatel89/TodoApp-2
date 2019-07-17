@@ -10,4 +10,5 @@
 ## Database  Info ## 
 
 • We have used Sqlite as local database 
+
 • Firebase realtime Database for store data in firebase DB
