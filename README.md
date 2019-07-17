@@ -4,11 +4,11 @@
 
 • See the list of all added tasks  without internet connection 
 
-• User can also  Edit ,delete , Add tasks without internet connection. When user connected with internet all changes will sync with firebase realtime base 
+• User can also  Edit ,delete , Add tasks without internet connection. When user connected with internet all changes will sync with firebase realtime database 
 
 
 ## Database  Info ## 
 
 • We have used Sqlite as local database 
 
-• Firebase realtime Database for store data in firebase DB
+• Firebase realtime database for store data in firebase DB
